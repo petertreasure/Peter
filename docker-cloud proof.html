@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Docker Cloud</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">P.</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a class="active"
+            href="projects.html">
+            Projects
+            </a></li>
+
+            <li><a href="contact.html">
+            Contact
+            </a></li>
+        </ul>
+
+              <a href="PETER_TREASURE_SOHNAGU_NDEFFO_CV.pdf"
+download
+class="cv-btn">
+    Download CV
+</a>
+
+    </nav>
+</header>
+
+<section class="single-project">
+
+    <a href="projects.html"
+    class="back-link">
+    ← Back to Projects
+    </a>
+
+    <h1>
+        Ubuntu Server
+    </h1>
+
+    <div class="line-center"></div>
+
+    <div class="project-layout">
+
+        <!-- LEFT -->
+<div class="project-images">
+
+    <img
+    id="mainProjectImage"
+    src="images\proofdock1.png"
+    class="main-image">
+
+    <div class="thumbnail-gallery">
+
+        <img
+        src="images\proofdock1.png"
+        onclick="changeImage(this)">
+
+        <img
+        src="images\proofdock2.png"
+        onclick="changeImage(this)">
+
+        <img
+        src="images\proofdock3.jpg"
+        onclick="changeImage(this)">
+
+        <img
+        src="images\proofdock4.png"
+        onclick="changeImage(this)">
+        
+
+    </div>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="project-info">
+
+            <h3>About Project</h3>
+
+            <p>
+This project involved building a private cloud storage 
+platform using Docker 
+and Nextcloud on Ubuntu Server.
+            </p>
+
+            <h3>
+                Technologies Used
+            </h3>
+
+            <div class="tech-stack">
+                <span>Virtual Box</span>
+                <span>Ubuntu server 20.04.0</span>
+                <span>Nextcloud</span>
+            </div>
+
+            <h3>
+                Key Features
+            </h3>
+
+            <ul class="feature-list">
+        <li> Docker container deployment</li>
+            <li>Persistent storage volume</li>
+            <li>Browser access via port 8080</li>
+            <li>File upload & sharing</li>
+            <li>Data survives restart</li>
+                
+            </ul>
+
+            <div class="project-buttons">
+
+
+                <a href="projects.html"
+                class="code-btn">
+                    Back
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>
+        © 2026 PETER TREASURE SOHNAGU NDEFFO.
+        All rights reserved.
+    </p>
+</footer>
+
+</body>
+<script>
+function changeImage(image){
+    document.getElementById(
+    "mainProjectImage"
+    ).src = image.src;
+}
+</script>
+</html>
