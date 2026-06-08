@@ -638,7 +638,31 @@ form textarea{
 .thumbnail-gallery img:hover{
     transform:scale(1.05);
 }
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
 
+.modal-content {
+    max-width: 90%;
+    max-height: 90vh;
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
 .project-info{
     flex:1;
 }
